@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    font-family: Arial, sans-serif;
+  }
+  
+  #tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 2px solid #333;
+  }
+  
+  .casa {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  
+  .clara { background-color: #f0d9b5; }
+  .escura { background-color: #b58863; }
+  
+  .selecionada {
+    outline: 3px solid yellow;
+  }
